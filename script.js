@@ -20,7 +20,9 @@ function stopLoading() {
 }
 
 function getMyQuote() {
+
     showingLoading();
+
     // Choosing a Random Quote Fromm allQuotes
     let myQuote = allQuotes[Math.floor(Math.random() * allQuotes.length)];
 
@@ -60,8 +62,7 @@ async function getQuotes() {
     try {
         getMyQuote();
     } catch (error) {
-        console.log(error);
-        getQuotes();
+
     }
 }
 
